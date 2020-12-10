@@ -43,3 +43,5 @@ jobs:
       
       - name: Deploying On Surge
         run: surge ./build http://expense_tracker_by_muhammad_zubair.surge.sh/ --token ${{secrets.SURGE_TOKEN}} 
+
+#https://expense-tracker-app-by-muhammad-zubair.netlify.app/
