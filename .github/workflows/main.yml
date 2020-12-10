@@ -37,10 +37,11 @@ jobs:
           # Yarn command
           cmd: install
         
-     
-      
+      - name: Creating Build
+        run : npm build
+             
       - name: Install on Surge
         run: npm install -g surge
       
       - name: Deploying On Surge
-        run: surge ./build http://expense_tracker_by_muhammad_zubair.surge.sh/ --token ${{secrets.SURGE_TOKEN}} 
+        run: surge ./build https://expense-tracker-app-by-muhammad-zubair.netlify.app/ --token ${{secrets.SURGE_TOKEN}} 
