@@ -5,6 +5,7 @@ name: CI
 # Controls when the action will run. 
 on:
  
+ 
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
@@ -36,8 +37,7 @@ jobs:
           # Yarn command
           cmd: install
         
-      - name: creating Build
-        run: npm build
+     
       
       - name: Install on Surge
         run: npm install -g surge
