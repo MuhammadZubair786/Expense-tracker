@@ -10,7 +10,7 @@ import "./App.css"
 function App() {
   return (
     <GlobalProvider>
-      <Header />
+      <Header  />
 
       <div className="container">
         <Balance />
