@@ -34,9 +34,6 @@ jobs:
         with:
           # Yarn command
           cmd: install
-          
-      - name: Sudo
-        run : run sudo
         
       - name: Creating Build
         run : yarn run build
