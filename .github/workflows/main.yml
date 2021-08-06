@@ -34,12 +34,15 @@ jobs:
         with:
           # Yarn command
           cmd: install
+          
+      - name: Sudo
+        run : run sudo
         
       - name: Creating Build
-        run : npm run build
+        run : yarn run build
              
       - name: Install on Surge
-        run: npm install -g surge
+        run: yarn install -g surge
       
       - name: Deploying On Surge
         run: surge ./build http://expense_tracker_by_muhammad_zubair.surge.sh/ --token ${{secrets.SURGE_TOKEN}} 
